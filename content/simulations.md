@@ -8,7 +8,7 @@ This page gives the basic overview of the model simulations and available data. 
 | Domain and resolution                                                 | Host team          | Link to data                     | Data contact           |
 |-----------------------------------------------------------------------|--------------------|----------------------------------|------------------------|
 |  <ins> **[SCREAM](https://github.com/digital-earths-global-hackathon/hk25/blob/main/content/models/scream.md)** </ins>      |  |  |  |
-| Global, 3.25 km / 128 levels     | [US-West](https://sites.google.com/lbl.gov/uswest-hackathon/home)                        | Delivery via Globus         | [Andrew Gettelman](mailto:andrew.gettelman@pnnl.gov)            |
+| Global, 3.25 km / 128 levels     | [US-West](https://sites.google.com/lbl.gov/uswest-hackathon/home)                        | [NERSC Data via Globus](https://github.com/digital-earths-global-hackathon/tools/tree/main/dataset_transfer/NERSC_globus.md)         | [Andrew Gettelman](mailto:andrew.gettelman@pnnl.gov)            |
 |  <ins> **[ICON](https://github.com/digital-earths-global-hackathon/hk25/blob/main/content/models/icon.md)** </ins>          |  |  |  |
 | Global, 2.5 km                   | [Hamburg](https://digital-earths-global-hackathon.github.io/hamburg-node/)               | *tba*                       | [Florian Ziemen](mailto:ziemen@dkrz.de)                         |
 |  <ins> **[NICAM](https://github.com/digital-earths-global-hackathon/hk25/blob/main/content/models/nicam.md)** </ins>        |  |  |  |
