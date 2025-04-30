@@ -1,35 +1,4 @@
-# How To Hack
-
-
-## Zoom
-
-- To maintain real-time coordination and discussions among nodes, we will host daily Zoom sessions.
-
-- These sessions will allow teams to share progress, challenges, and feedback.
-Key-note presentations and other relevant contributions can be recorded and collected in a multimedia space (TBD - Vimeo channel?)
-
-- A link to the recurring Zoom meeting will be provided before the event:
-
-- Each science team (see below) will have their own zoom breakout room (using the name of the science team).  
-
-<!-- Each node should designate a representative to join the daily check-in call (determining fixed times to organize these check-ins). -->
-
-
-## Mattermost
-
-Mattermost will serve as the instant messenger service across nodes (and within nodes). One can easily start written conversations across nodes, open public and private channels to discuss certain topics. We will use the [WCRP Lighthouse mattermost team](https://mattermost.mpimet.mpg.de/signup_user_complete/?id=w9ara4zws7gktd9waxxdz4wyjr&md=link&sbr=su). All participants will receive an invite to join the service. 
-
-Mattermost works like slack or other instant messaging clients, either through a web browser or dedicated app on a computer or mobile device. We recommend the desktop app.
-
-Mattermost is organized into ‘channels’. The hackathon channels for participants will all have `hk-` in the beginning of them. You can find channels in the upper left search box (start with `hk25-`). 
-
-Channels are organized as follows: 
-- All hackathon channels should start with `hk25-`
-- Individual nodes can create their own internal channels with another descriptor, e.g. `hk25-UK`
-- There are 2 general channels
-    - Broadcasting general information: (`kk25-Global Commons`) 
-    - A channel for data questions (`hk25-Data-Model Questions`)
-- Each Science Team (see below) will have a channel with its name (e.g. `hk25-MCS)` for communication
+# How To Hack 2025
 
 ## Science Team Organization
 
@@ -57,6 +26,22 @@ If you do not see a science team of interest:
 - We encourage you to see if there is a team which is already related and join it
 - If not, create your own! See the instructions (README) in the (hackathon science teams repository)[https://github.com/digital-earths-global-hackathon/hk25-teams]. It would help to have some knowledge of github, or team up with someone who does. 
 
+## Mattermost
+
+Mattermost will serve as the instant messenger service across nodes (and within nodes). One can easily start written conversations across nodes, open public and private channels to discuss certain topics. We will use the [WCRP Lighthouse mattermost team](https://mattermost.mpimet.mpg.de/signup_user_complete/?id=w9ara4zws7gktd9waxxdz4wyjr&md=link&sbr=su). All participants will receive an invite to join the service. 
+
+Mattermost works like slack or other instant messaging clients, either through a web browser or dedicated app on a computer or mobile device. We recommend the desktop app.
+
+Mattermost is organized into ‘channels’. The hackathon channels for participants will all have `hk-` in the beginning of them. You can find channels in the upper left search box (start with `hk25-`). 
+
+Channels are organized as follows: 
+- All hackathon channels should start with `hk25-`
+- Individual nodes can create their own internal channels with another descriptor, e.g. `hk25-UK`
+- There are 2 general channels
+    - Broadcasting general information: (`kk25-Global Commons`) 
+    - A channel for data questions (`hk25-Data-Model Questions`)
+- Each Science Team (see below) will have a channel with its name (e.g. `hk25-MCS)` for communication
+
 ## Github
 
 Most of our technical communication will happen by [github](http://github.com/). Github is a git repository site which is designed to hold documents with information, code and provide a platform for discussions on ‘issues’. 
@@ -74,3 +59,16 @@ Ways we will interact on github:
     - Several of the nodes have their own folders in [hk25-teams](https://github.com/digital-earths-global-hackathon/hk25-teams) with node-specific examples
 
 - Discussions will happen asynchronously on github using github issues with labels for each science team (see discussion under science teams above)
+
+## Zoom
+
+- To maintain real-time coordination and discussions among nodes, we will host daily Zoom sessions.
+
+- These sessions will allow teams to share progress, challenges, and feedback.
+Key-note presentations and other relevant contributions can be recorded and collected in a multimedia space (TBD - Vimeo channel?)
+
+- A link to the recurring Zoom meeting will be provided before the event:
+
+- Each science team (see below) will have their own zoom breakout room (using the name of the science team).  
+
+<!-- Each node should designate a representative to join the daily check-in call (determining fixed times to organize these check-ins). -->
