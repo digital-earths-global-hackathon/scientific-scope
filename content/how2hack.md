@@ -1,16 +1,31 @@
 # How To Hack 2025
 
+This document describes the concept for science teams and communication by those who you cannot just walk over and talk to!  The first stop on the hackathon journey are your fellow hackers in the same room: find out what they are working on, offer to help and share. 
+
+The following discussion of teams and tools is intended to be used within a node and especially across nodes. We discuss below this organization:
+- Science Teams
+- Instant Messaging/Chat (Mattermost)
+- Code/Script/Tool Sharing and Asynchronous Discussions (Github)
+- Live video calls (Zoom)
+
 ## Science Team Organization
 
 We want to connect people working on different science topics. The primary unit of organization across nodes will be ‘science teams’ which are user proposed. The current list of science teams and topics is described on a [Science Teams webpage](https://digital-earths-global-hackathon.github.io/hk25/scienceteams/) on the hackathon website. 
 
 The science teams will communicate in the following ways:
+
 - Each science team will have a mattermost channel `hk25-<name>` (e.g. `hk25-MCS`). 
+
 - Science Teams will have a zoom breakout room (see above)
 Zoom calls can be arranged via mattermost. 
+
 - The primary means of communication will be sharing code and discussions (via github issues) on the [github science teams repository](https://github.com/digital-earths-global-hackathon/hk25-teams)
+    - For more on github, see specific github section below
+
 - To start or join a discussion on a science topic, use github ‘issues’ in the `hk25-teams` repository
+
     - See this [github issues quickstart](https://docs.github.com/en/issues/tracking-your-work-with-issues/configuring-issues/quickstart) tutorial for working with issues on Github. Mostly you will just want to filter issues by label for the science team (e.g. `hk25-MCS`), and you can add comments, figures. 
+
 
     - Make sure your issue has a label corresponding to the science team (e.g. hk25-MCS). See [managing github labels](https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels) for more information.
 
@@ -19,11 +34,13 @@ Zoom calls can be arranged via mattermost.
 If you want to join a science team: 
 
 - Email the organizer (see the website above or github README pages for each team)
+
 - Join the mattermost channel for the team (see Mattermost): You can search for the channel and join it
 
 If you do not see a science team of interest:
 
 - We encourage you to see if there is a team which is already related and join it
+
 - If not, create your own! See the instructions (README) in the (hackathon science teams repository)[https://github.com/digital-earths-global-hackathon/hk25-teams]. It would help to have some knowledge of github, or team up with someone who does. 
 
 ## Mattermost
