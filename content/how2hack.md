@@ -49,13 +49,13 @@ Mattermost will serve as the instant messenger service across nodes (and within 
 
 Mattermost works like slack or other instant messaging clients, either through a web browser or dedicated app on a computer or mobile device. We recommend the desktop app.
 
-Mattermost is organized into ‘channels’. The hackathon channels for participants will all have `hk-` in the beginning of them. You can find channels in the upper left search box (start with `hk25-`). 
+Mattermost is organized into ‘channels’. The hackathon channels for participants will all have `hk25-` in the beginning of them. You can find channels in the upper left search box (start with `hk25-`). 
 
 Channels are organized as follows: 
 - All hackathon channels should start with `hk25-`
 - Individual nodes can create their own internal channels with another descriptor, e.g. `hk25-UK`
 - There are 2 general channels
-    - Broadcasting general information: (`kk25-Global Commons`) 
+    - Broadcasting general information: (`hk25-Global Commons`) 
     - A channel for data questions (`hk25-Data-Model Questions`)
 - Each Science Team (see below) will have a channel with its name (e.g. `hk25-MCS)` for communication
 
@@ -86,6 +86,6 @@ Key-note presentations and other relevant contributions can be recorded and coll
 
 - A link to the recurring Zoom meeting will be provided before the event:
 
-- Each science team (see below) will have their own zoom breakout room (using the name of the science team).  
+- Each science team (see above) will have their own zoom breakout room (using the name of the science team).  
 
 <!-- Each node should designate a representative to join the daily check-in call (determining fixed times to organize these check-ins). -->
