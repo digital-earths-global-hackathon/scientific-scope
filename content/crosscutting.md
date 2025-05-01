@@ -53,7 +53,7 @@ In this cross-cutting activity we will evaluate the capabilities and limitations
 
 **Note** Participants are asked to register for the team as early as possible so the varied skill levels can be evalauted and approrpiate activities defined. 
 
-**Coordination**: Noah Brenowitz (nbrenowitz@nvidia.com)
+**Coordination**: Karthik Kashinath (kkashinath@nvidia.com), Noah Brenowitz (nbrenowitz@nvidia.com)
 
 #### Sketch of initial activities:
 * extend AI training to additional models hosted on NERSC mode
