@@ -32,9 +32,10 @@ Zoom calls can be arranged via Mattermost.
 
 If you want to join a science team:
 
-- Email the organizer (see the website above or github README pages for each team)
-
 - Join the mattermost channel for the team (see Mattermost): You can search for the channel and join it
+    - Go to 'Find Channels' at the upper left, and search for hk25-[TeamName]. Clicking on it will add you to the channel
+
+    - or email the organizer (see the website above or github README pages for each team)
 
 If you do not see a science team of interest:
 
