@@ -1,6 +1,6 @@
 # How To Hack 2025
 
-This document describes the concept for science teams and communication by those who you cannot just walk over and talk to!  The first stop on the hackathon journey are your fellow hackers in the same room: find out what they are working on, offer to help and share. 
+This document describes the concept for science teams and communication by those who you cannot just walk over and talk to! The first stop on the hackathon journey are your fellow hackers in the same room: find out what they are working on, offer to help and share. 
 
 The following discussion of teams and tools is intended to be used within a node and especially across nodes. We discuss below this organization:
 - Science Teams
@@ -33,9 +33,10 @@ Zoom calls can be arranged via mattermost.
 
 If you want to join a science team: 
 
-- Email the organizer (see the website above or github README pages for each team)
-
 - Join the mattermost channel for the team (see Mattermost): You can search for the channel and join it
+    - Find channels in mattermost using "Find Channel" and search on hk25-[TeamName], and just click on it to join
+
+-  Email the organizer (see the website above or github README pages for each team)
 
 If you do not see a science team of interest:
 
