@@ -10,7 +10,7 @@ This page gives the basic overview of the model simulations and available data. 
 |  <ins> **[SCREAM](https://github.com/digital-earths-global-hackathon/hk25/blob/main/content/models/scream.md)** </ins>      |  |  |  |
 | Global, 3.25 km / 128 levels     | [US-West](https://sites.google.com/lbl.gov/uswest-hackathon/home)                        | [NERSC Data via Globus](https://github.com/digital-earths-global-hackathon/tools/tree/main/dataset_transfer/NERSC_globus.md)         | [Andrew Gettelman](mailto:andrew.gettelman@pnnl.gov)            |
 |  <ins> **[ICON](https://github.com/digital-earths-global-hackathon/hk25/blob/main/content/models/icon.md)** </ins>          |  |  |  |
-| Global, 2.5 km                   | [Hamburg](https://digital-earths-global-hackathon.github.io/hamburg-node/)               | *tba*                       | [Florian Ziemen](mailto:ziemen@dkrz.de)                         |
+| Global, 2.5 km                   | [Hamburg](https://digital-earths-global-hackathon.github.io/hamburg-node/)               | *tba*                       | [Karl-Hermann Wieners](https://mpimet.mpg.de/mitarbeiterinnen/karl-hermann-wieners)                         |
 |  <ins> **[NICAM](https://github.com/digital-earths-global-hackathon/hk25/blob/main/content/models/nicam.md)** </ins>        |  |  |  |
 | Global, 3.5 km                   | [Tokyo](https://dpo.aori.u-tokyo.ac.jp/dmmg/ICCP-GSRA/Global-Hackathon_Tokyo.htm)        | *tba*                       | [Daisuke Takasuka](mailto:takasuka@tohoku.ac.jp)      |
 |  <ins> **[Unified Model](https://github.com/digital-earths-global-hackathon/hk25/blob/main/content/models/um.md)** </ins>   |  |  |  |
