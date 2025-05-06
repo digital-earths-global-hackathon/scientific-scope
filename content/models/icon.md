@@ -61,11 +61,11 @@ Generalized smooth-level vertical coordinate ([Leuenberger et al., 2010][L2010])
 
 #### Grid staggering
 
-Velocity components in the edge centers and scalars in the cell center, as illustrated in Figure 4 of [Giorgetta et al. (2018)][G2018].
+- Velocity components in the edge centers and scalars in the cell center, as illustrated in Figure 4 of [Giorgetta et al. (2018)][G2018].
 
 #### Initial conditions
 
-From IFS for date 2020-01-01T00:00:00Z
+- From IFS for date 2020-01-01T00:00:00Z
 
 #### External data
 
@@ -83,11 +83,11 @@ From IFS for date 2020-01-01T00:00:00Z
 
 #### Simulation period
 
-14 months from 2020-01-01T00:00:00Z to 2021-03-01T00:00:00Z
+- 14 months from 2020-01-01T00:00:00Z to 2021-03-01T00:00:00Z
 
 #### Simulation name
 
-d3hp003
+- d3hp003
 
 #### Simulation modifications
 
@@ -107,12 +107,12 @@ Due to crashes, of technical nature as it turned out later, some adjustments of 
 #### Standard output
 
 The standard output follows the data request (https://digital-earths-global-hackathon.github.io/hosting/technical/data_request.html) with a few deviations:
-- The soil liquid water content `mrso` in kg/m2 is available as 3d field for 5 soil levels instead of a vertical sum over all soil levels.
-- The liquid water content of surface snow `swe` is not available over land ice so that this field is zero in areas like Antarctica and Greenland
+- `mrso`, the soil liquid water content in kg/m2 is available as 3d field for 5 soil levels instead of a vertical sum over all soil levels.
+- `swe`, the liquid water content of surface snow is not available over land ice so that this field is zero in areas like Antarctica and Greenland
 
-### Additional outputs
+### Additional output
 
-- Relative vorticity in the atmosphere (rva) in 1/s, a 3d field on 3 pressure levels: 850, 500 and 300 hPa, 3-hourly, instantaneous
+- `rva`, relative vorticity in the atmosphere in 1/s, as 3d field on 3 pressure levels: 850, 500 and 300 hPa, 3-hourly, instantaneous
 - Energy content of the atmosphere in J/m2, 3-hourly, instantaneous
   - `egpvi`: geopotential energy content
   - `einvi`: internal energy content
@@ -133,7 +133,7 @@ The standard output follows the data request (https://digital-earths-global-hack
 
 - levante.dkrz.de:/work/bm1235/k203123/dy3ha-p/experiments/d3hp003/outdata/d3hp003.zarr
 
-- Output fields are stored in individual Zarr2 stores for different output periods, for instantaneous data and time averaged data, and for different HEALPix zoom levels: <period>_<inst/mean>_z<level>_atm
+- Output fields are stored in individual Zarr2 stores named `<period>_<inst/mean>_z<level>_atm` for different output periods, for instantaneous data and time averaged data, and for different HEALPix zoom levels, where:
   - period: CONST, PT1H, PT3H, PT6H, P1D
   - level: 11 to 0
 
@@ -141,16 +141,14 @@ The standard output follows the data request (https://digital-earths-global-hack
 
 ### Quickplots
 
-The so-called "quickplots" provide a preview of the model simulation fields including for some fields differences to ERA5 and CERES. These plots are made from data on HEALPix zoom level 7.
+The so-called "quickplots" provide a preview of the model simulation fields at HEALPix zoom level 7, including for some fields differences to ERA5 and CERES.
 
--> https://swiftbrowser.dkrz.de/public/dkrz_e59fa4f2fcac49f2aec87e9b1d1ae0eb/icon_r2b10l90_d3hp003/
-
-Three collections of plots are provided:
-- d3hp003-ERA5_<time period>
-  - atm_zon.html : zonal means of 3d fields and where possible differences to ERA5
-  - bot_map.html : 2d model fields and where possible differences to ERA5
-- d3hp003-CERES_<time period>
-  - bot_map_CERES.html : 2d model fields (same as above) and where possible differences to CERES
+Three collections of plots are contained in [icon_r2b10l90_d3hp003](https://swiftbrowser.dkrz.de/public/dkrz_e59fa4f2fcac49f2aec87e9b1d1ae0eb/icon_r2b10l90_d3hp003/):
+- Folders d3hp003-ERA5_<time period>:
+  - atm_zon.html: zonal means of 3d fields and where possible differences to ERA5
+  - bot_map.html: 2d model fields and where possible differences to ERA5
+- Folders d3hp003-CERES_<time period>:
+  - bot_map_CERES.html: 2d model fields (same as above) and where possible differences to CERES
 
 Available time periods:
 - monthly mean: 2020-01 until 2021-02
