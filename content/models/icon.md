@@ -1,9 +1,9 @@
+
+
 # Model Name: ICON
-Team Name : MPI-Met, Hamburg
 
-Model Link: [ICON](https://icon-model.org/)
-
---
+- Team Name : MPI-Met, Hamburg
+- Model Link: [ICON](https://icon-model.org/) 
 
 ## Model description
 
@@ -35,7 +35,7 @@ This model setup is therefore experimental with the main purpose to generate a d
 - The dynamical core has 5 sub-steps per model time step
 - The tracer transport scheme has 3 sub steps per model time step
 - The radiative transfer is computed at a time step of dt_rad = 15 min, using a solar zenith angle at the current time + (dt_rad-dt_atm)/2.
-- Radiative temperature tendencies are computed every model time step taking into account the current heat capacity of air and scaling the insolation to the solar zenith angle of the current time.
+- Radiative temperature tendencies are computed every model time step taking into account the current heat capacity of air and scaling the shortwave fluxes to the solar zenith angle of the current time.
 
 #### Coupling of processes
 
@@ -45,9 +45,10 @@ dynamics -> horizontal diffusion -> tracer advection -> cloud microphysics -> ra
 
 Triangular grid derived from the spherical icosahedron
 - R2B10 = 11-fold bisection of the edges of the spherical icosahedron
-- + rotation of the southern hemisphere by 36° around N-S axis to make the grid symmetric about the equator
-- + optimization of edge lengths for numerical operators
-- 83,886,080 cells, nominal resolution dx = ~2.5 km (see Table 1 in [Giorgetta et al., 2018][G2018]).
+- rotation of the southern hemisphere by 36° around N-S axis to make the grid symmetric about the equator
+- optimization of edge lengths for numerical operators
+- 83,886,080 cells
+- nominal resolution dx = ~2.5 km (see Table 1 in [Giorgetta et al., 2018][G2018]).
 
 #### Vertical grid
 
@@ -92,7 +93,7 @@ d3hp003
 
 Due to crashes, of technical nature as it turned out later, some adjustments of the model setup happened during the course of the simulation:
 
-- 2020-05-28T00:00:00Z: dt_atm: 20s -> 15s, ozone: prognostic -> external data, zmaxcloudy: 33km -> 22.5km (1)
+- 2020-05-28T00:00:00Z: dt_atm: 20s -> 15s, ozone: prognostic -> external data, zmaxcloudy: 33km -> 22.5km (1), correction for proper daily means of 3d fields on pressure levels
 - 2020-06-05T00:00:00Z: dt_atm: 15s -> 20s
 - 2020-07-27T00:00:00Z: dt_atm: 20s -> 18s, dynamics substeps: 5 -> 6
 - 2020-08-04T00:00:00Z: dt_atm: 18s -> 20s, dynamics substeps: 6 -> 5
@@ -113,20 +114,20 @@ The standard output follows the data request (https://digital-earths-global-hack
 
 - Relative vorticity in the atmosphere (rva) in 1/s, a 3d field on 3 pressure levels: 850, 500 and 300 hPa, 3-hourly, instantaneous
 - Energy content of the atmosphere in J/m2, 3-hourly, instantaneous
-  - egpvi: geopotential energy content
-  - einvi: internal energy content
-  - ekhvi: horizontal kinetic energy content
-  - ekvvi: vertical kinetic energy content
+  - `egpvi`: geopotential energy content
+  - `einvi`: internal energy content
+  - `ekhvi`: horizontal kinetic energy content
+  - `ekvvi`: vertical kinetic energy content
 - Tendencies of energy content of the atmosphere in J/m2/s, 3-hourly, time mean
-  - tend_egpdynvi: tendency of geopotential energy content due to dynamics
-  - tend_eindynvi: tendency of internal energy content due to dynamics
-  - tend_eincldvi: tendency of internal energy content due to cloud microphysics
-  - tend_einradvi: tendency of internal energy content due to radiation
-  - tend_eintmxvi: tendency of internal energy content due to turbulent mixing
-  - tend_ekhdynvi: tendency of horizontal kinetic energy content dynamics
-  - tend_ekvdynvi: tendency of vertical kinetic energy content due to dynamics
+  - `tend_egpdynvi`: tendency of geopotential energy content due to dynamics
+  - `tend_eindynvi`: tendency of internal energy content due to dynamics
+  - `tend_eincldvi`: tendency of internal energy content due to cloud microphysics
+  - `tend_einradvi`: tendency of internal energy content due to radiation
+  - `tend_eintmxvi`: tendency of internal energy content due to turbulent mixing
+  - `tend_ekhdynvi`: tendency of horizontal kinetic energy content dynamics
+  - `tend_ekvdynvi`: tendency of vertical kinetic energy content due to dynamics
 - Daily means of all fields
-  - **Restriction**: For 3d fields given on pressure level, until 2020-mm-dd these means are the average of the four 6-hourly instantaneous fields of a day. Only thereafter these time means include all model time steps of a day.
+  - **Restriction**: For 3d fields given on pressure level, until 2020-05-28 the daily means are the averages of the four 6-hourly instantaneous fields of a day. Only after 2020-05-28 the daily means include all model time steps of a day.
 
 #### Output base directory
 
@@ -158,22 +159,24 @@ Available time periods:
 
 ---
 
-### Contact: [Marco Giorgetta](mailto:marco.giorgetta@mpimet.mpg.de)
+### Contact
+
+[Marco Giorgetta](mailto:marco.giorgetta@mpimet.mpg.de)
 
 ---
 
 **References**
 
-[C2007]: Cariolle, D. and Teyssèdre, H. (2007). A revised linear ozone photochemistry parameterization for use in transport and general circulation models: multi-annual simulations. Atmos. Chem. Phys., 7. https://doi.org/10.5194/acp-7-2183-2007
+[C2007]: https://doi.org/10.5194/acp-7-2183-2007 'Cariolle, D. and Teyssèdre, H. (2007). A revised linear ozone photochemistry parameterization for use in transport and general circulation models: multi-annual simulations. Atmos. Chem. Phys., 7. https://doi.org/10.5194/acp-7-2183-2007'
 
-[G2018]: Giorgetta, M. A., Brokopf, R., Crueger, T., Esch, M., Fiedler, S., Helmert, J., et al. (2018). ICON-A, the atmosphere component of the ICON Earth system model: I. Model description. Journal of Advances in Modeling Earth Systems, 10. https://doi.org/10.1029/2017MS001242
+[G2018]: https://doi.org/10.1029/2017MS001242 'Giorgetta, M. A., Brokopf, R., Crueger, T., Esch, M., Fiedler, S., Helmert, J., et al. (2018). ICON-A, the atmosphere component of the ICON Earth system model: I. Model description. Journal of Advances in Modeling Earth Systems, 10. https://doi.org/10.1029/2017MS001242'
 
-[H2023]: Hohenegger, C., Korn, P., Linardakis, L., Redler, R., Schnur, R., Adamidis, P., et al. (2023). ICON-Sapphire: simulating the components of the Earth system and their interactions at kilometer and subkilometer scales. Geosci. Model Dev., 16. https://doi.org/10.5194/gmd-16-779-2023
+[H2023]: https://doi.org/10.5194/gmd-16-779-2023 'Hohenegger, C., Korn, P., Linardakis, L., Redler, R., Schnur, R., Adamidis, P., et al. (2023). ICON-Sapphire: simulating the components of the Earth system and their interactions at kilometer and subkilometer scales. Geosci. Model Dev., 16. https://doi.org/10.5194/gmd-16-779-2023'
 
-[L2010]: Leuenberger, D., Koller, M., Fuhrer, O., & Schär, C. (2010). A generalization of the SLEVE vertical coordinate. Monthly Weather Review, 138(9). https://doi.org/10.1175/2010MWR3307.1
+[L2010]:  https://doi.org/10.1175/2010MWR3307.1 'Leuenberger, D., Koller, M., Fuhrer, O., & Schär, C. (2010). A generalization of the SLEVE vertical coordinate. Monthly Weather Review, 138(9). https://doi.org/10.1175/2010MWR3307.1'
 
-[S2025] Segura, H., Pedruzo-Bagazgoitia, X., Weiss, P., Müller, S. K., Rackow, T., Lee, J., et al. (2025). nextGEMS: entering the era of kilometer-scale Earth system modeling. EGUsphere [preprint]. https://doi.org/10.5194/egusphere-2025-509
+[S2025] https://doi.org/10.5194/egusphere-2025-509 'Segura, H., Pedruzo-Bagazgoitia, X., Weiss, P., Müller, S. K., Rackow, T., Lee, J., et al. (2025). nextGEMS: entering the era of kilometer-scale Earth system modeling. EGUsphere [preprint]. https://doi.org/10.5194/egusphere-2025-509'
+ 
+[S2019]: https://doi.org/10.1186/s40645-019-0304-z 'Stevens, B., Satoh, M., Auger, L. et al. (2019). DYAMOND: the DYnamics of the Atmospheric general circulation Modeled On Non-hydrostatic Domains. Prog Earth Planet Sci 6, 61. https://doi.org/10.1186/s40645-019-0304-z'
 
-[S2019]: Stevens, B., Satoh, M., Auger, L. et al. (2019). DYAMOND: the DYnamics of the Atmospheric general circulation Modeled On Non-hydrostatic Domains. Prog Earth Planet Sci 6, 61. https://doi.org/10.1186/s40645-019-0304-z
-
-[Z2015]: Zängl, G., Reinert, D., Ripodas, P., & Baldauf, M. (2015). The ICON (ICOsahedral Non-hydrostatic) modelling framework of DWD and MPI-M: Description of the non-hydrostatic dynamical core. Quarterly Journal of the Royal Meteorological Society, 141(687). https://doi.org/10.1002/qj.2378
+[Z2015]: https://doi.org/10.1002/qj.2378 'Zängl, G., Reinert, D., Ripodas, P., & Baldauf, M. (2015). The ICON (ICOsahedral Non-hydrostatic) modelling framework of DWD and MPI-M: Description of the non-hydrostatic dynamical core. Quarterly Journal of the Royal Meteorological Society, 141(687). https://doi.org/10.1002/qj.2378'
