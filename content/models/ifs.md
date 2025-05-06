@@ -29,7 +29,6 @@ Simulation DOI: (please cite above reference for the moment)
 ## Data notes (EU local access)
 
 - (add more information, to do)
-- (temporarily: access to "RCBMF", "DEEPOFF", and multi-decadal nextGEMS simulations at 9km resolution possible via 
-import intake
-cat = intake.open_catalog("https://data.nextgems-h2020.eu/catalog.yaml"))
+- (temporarily: access to "RCBMF", "DEEPOFF", and multi-decadal nextGEMS simulations at 9km resolution possible via
+cat = intake.open_catalog("https://data.nextgems-h2020.eu/catalog.yaml"). See also the [easy.gems documentation](https://easy.gems.dkrz.de/DYAMOND/NextGEMS/prefinal.html))
 - access to DestinE multi-decadal simulations possible via [DESP (more information here)](https://github.com/digital-earths-global-hackathon/hk25-teams/blob/main/hk25-DestinE/intro/introduction.md), requires registration
