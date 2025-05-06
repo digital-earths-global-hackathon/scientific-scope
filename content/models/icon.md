@@ -127,13 +127,13 @@ The standard output follows the data request (https://digital-earths-global-hack
   - `tend_ekhdynvi`: tendency of horizontal kinetic energy content dynamics
   - `tend_ekvdynvi`: tendency of vertical kinetic energy content due to dynamics
 - Daily means of all fields
-  - **Restriction**: For 3d fields given on pressure level, until 2020-05-28 the daily means are the averages of the four 6-hourly instantaneous fields of a day. Only after 2020-05-28 the daily means include all model time steps of a day.
+  - **Restriction**: For 3d fields, until 2020-05-28 the daily means are the averages of the four 6-hourly instantaneous fields of a day. Only thereafter the daily means include all model time steps of a day.
 
 #### Output base directory
 
 - levante.dkrz.de:/work/bm1235/k203123/dy3ha-p/experiments/d3hp003/outdata/d3hp003.zarr
 
-- Output fields are stored in individual Zarr2 stores named `<period>_<inst/mean>_z<level>_atm` for different output periods, for instantaneous data and time averaged data, and for different HEALPix zoom levels, where:
+- Output fields are stored in individual Zarr2 stores named `<period>_<inst\/mean>_z<level>_atm` for different output periods, for instantaneous data and time averaged data, and for different HEALPix zoom levels, where:
   - period: CONST, PT1H, PT3H, PT6H, P1D
   - level: 11 to 0
 
@@ -144,22 +144,28 @@ The standard output follows the data request (https://digital-earths-global-hack
 The so-called "quickplots" provide a preview of the model simulation fields at HEALPix zoom level 7, including for some fields differences to ERA5 and CERES.
 
 Three collections of plots are contained in [icon_r2b10l90_d3hp003](https://swiftbrowser.dkrz.de/public/dkrz_e59fa4f2fcac49f2aec87e9b1d1ae0eb/icon_r2b10l90_d3hp003/):
-- Folders d3hp003-ERA5_<time period>:
+- Folders d3hp003-ERA5_\<time period\>:
   - atm_zon.html: zonal means of 3d fields and where possible differences to ERA5
   - bot_map.html: 2d model fields and where possible differences to ERA5
-- Folders d3hp003-CERES_<time period>:
+- Folders d3hp003-CERES_\<time period\>:
   - bot_map_CERES.html: 2d model fields (same as above) and where possible differences to CERES
 
 Available time periods:
-- monthly mean: 2020-01 until 2021-02
-- seasonal mean: 202003-202005 (MAM), 202006-202008 (JJA), 202009-202011 (SON), 202012-202102 (DJF)
-- annual mean: 202003-202102
+- monthly mean
+  - 2020-01 until 2021-02
+- seasonal mean
+  - 202003-202005 (MAM)
+  - 202006-202008 (JJA)
+  - 202009-202011 (SON)
+  - 202012-202102 (DJF)
+- annual mean
+  - 202003-202102
 
 ---
 
 ### Contact
 
-[Marco Giorgetta](mailto:marco.giorgetta@mpimet.mpg.de)
+- [Marco Giorgetta](mailto:marco.giorgetta@mpimet.mpg.de)
 
 ---
 
