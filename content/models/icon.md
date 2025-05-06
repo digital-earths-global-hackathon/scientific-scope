@@ -140,7 +140,7 @@ The standard output follows the data request (https://digital-earths-global-hack
 
 - levante.dkrz.de:/work/bm1235/k203123/dy3ha-p/experiments/d3hp003/outdata/d3hp003.zarr
 
-- Output fields are stored in individual Zarr2 stores named `<period>_<inst\/mean>_z<level>_atm` for different output periods, for instantaneous data and time averaged data, and for different HEALPix zoom levels, where:
+- Output fields are stored in individual Zarr2 stores named `<period>_<inst/mean>_z<level>_atm` for different output periods, for instantaneous data and time averaged data, and for different HEALPix zoom levels, where:
   - period: CONST, PT1H, PT3H, PT6H, P1D
   - level: 11 to 0
 
