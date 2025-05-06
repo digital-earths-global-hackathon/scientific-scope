@@ -93,10 +93,17 @@ Generalized smooth-level vertical coordinate ([Leuenberger et al., 2010][L2010])
 
 Due to crashes, of technical nature as it turned out later, some adjustments of the model setup happened during the course of the simulation:
 
-- 2020-05-28T00:00:00Z: dt_atm: 20s -> 15s, ozone: prognostic -> external data, zmaxcloudy: 33km -> 22.5km (1), correction for proper daily means of 3d fields on pressure levels
-- 2020-06-05T00:00:00Z: dt_atm: 15s -> 20s
-- 2020-07-27T00:00:00Z: dt_atm: 20s -> 18s, dynamics substeps: 5 -> 6
-- 2020-08-04T00:00:00Z: dt_atm: 18s -> 20s, dynamics substeps: 6 -> 5
+- 2020-05-28T00:00:00Z
+  - dt_atm: 20s -> 15s
+  - ozone: prognostic -> external data
+  - zmaxcloudy: 33km -> 22.5km (1)
+  - correction for proper daily means of 3d fields on pressure levels
+- 2020-06-05T00:00:00Z
+  - dt_atm: 15s -> 20s
+- 2020-07-27T00:00:00Z
+  - dt_atm: 20s -> 18s and dynamics substeps: 5 -> 6
+- 2020-08-04T00:00:00Z
+  - dt_atm: 18s -> 20s and dynamics substeps: 6 -> 5
 
 (1) zmaxcloudy is the maximum height up to which cloud microphysics is computed
 
@@ -179,7 +186,7 @@ Available time periods:
 
 [L2010]:  https://doi.org/10.1175/2010MWR3307.1 'Leuenberger, D., Koller, M., Fuhrer, O., & Schär, C. (2010). A generalization of the SLEVE vertical coordinate. Monthly Weather Review, 138(9). https://doi.org/10.1175/2010MWR3307.1'
 
-[S2025] https://doi.org/10.5194/egusphere-2025-509 'Segura, H., Pedruzo-Bagazgoitia, X., Weiss, P., Müller, S. K., Rackow, T., Lee, J., et al. (2025). nextGEMS: entering the era of kilometer-scale Earth system modeling. EGUsphere [preprint]. https://doi.org/10.5194/egusphere-2025-509'
+[S2025]: https://doi.org/10.5194/egusphere-2025-509 'Segura, H., Pedruzo-Bagazgoitia, X., Weiss, P., Müller, S. K., Rackow, T., Lee, J., et al. (2025). nextGEMS: entering the era of kilometer-scale Earth system modeling. EGUsphere [preprint]. https://doi.org/10.5194/egusphere-2025-509'
  
 [S2019]: https://doi.org/10.1186/s40645-019-0304-z 'Stevens, B., Satoh, M., Auger, L. et al. (2019). DYAMOND: the DYnamics of the Atmospheric general circulation Modeled On Non-hydrostatic Domains. Prog Earth Planet Sci 6, 61. https://doi.org/10.1186/s40645-019-0304-z'
 
