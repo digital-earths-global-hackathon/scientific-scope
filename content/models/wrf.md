@@ -14,6 +14,9 @@ CONUS404 is a unique, high-resolution hydro-climate dataset appropriate for forc
 
 The CONUS404 dataset, produced using WRF version 3.9.1.1, is the successor to the CONUS1 dataset in d612000 (Liu, et al. 2017) with improved representation of weather and climate conditions in the central United States due to the addition of a shallow groundwater module and several other improvements in the NOAH-Multiparameterization land surface model. It also uses a more up-to-date and higher-resolution reanalysis dataset (ERA5) as input and covers a longer period than CONUS1.
 
+Path to raw data on NCAR's glade system: /glade/campaign/collections/rda/data/ds559.0/ 
+Path to HEALPix/zarr subset of this dataset: /glade/derecho/scratch/digital-earths-hackathon/conus404/healpix/
+
 More data is available (not in HEALPix or zarr) at: https://rda.ucar.edu/datasets/d559000/
 
 
@@ -38,6 +41,9 @@ Rasmussen, R. M., C. Liu, K. Ikeda, F. Chen, J. Kim, T. Schneider, D. Gochis, A.
 ## Convection-permitting Simulation over South America
 
 A high resolution convection-permitting climate change simulation was performed at 4 km grid spacing covering the entire continent of South America. The simulation was performed using Weather Research Forecasting (WRF) model. This dataset is from a 22-year simulation representing the current climate between January 2001 and January 2022. ERA5 data was used to initialize the model and force boundary every 3 hours. This high resolution simulation allowed for much improved representation of topography, convection, and orographic precipitation and snowpack, resulting in a unique dataset that can be used to study the hydroclimate processes in South America.
+
+Path to raw data on NCAR's glade system: /glade/campaign/collections/rda/data/ds616.0/ 
+Path to HEALPix/zarr subset of this dataset: /glade/derecho/scratch/digital-earths-hackathon/samerica/healpix/
 
 More data is available (not in HEALPix or zarr) at: https://rda.ucar.edu/datasets/d616000
 
