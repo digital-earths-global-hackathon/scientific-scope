@@ -93,19 +93,20 @@ Generalized smooth-level vertical coordinate ([Leuenberger et al., 2010][L2010])
 
 Due to crashes, of technical nature as it turned out later, some adjustments of the model setup happened during the course of the simulation:
 
-- 2020-05-28T00:00:00Z
-  - dt_atm: 20s -> 15s
-  - ozone: prognostic -> external data
-  - zmaxcloudy: 33km -> 22.5km (1)
-  - correction for proper daily means of 3d fields on pressure levels
-- 2020-06-05T00:00:00Z
-  - dt_atm: 15s -> 20s
-- 2020-07-27T00:00:00Z
-  - dt_atm: 20s -> 18s and dynamics substeps: 5 -> 6
-- 2020-08-04T00:00:00Z
-  - dt_atm: 18s -> 20s and dynamics substeps: 6 -> 5
+| Simulation date      | Change                                           |
+| -------------------- | ------------------------------------------------ |
+| 2020-05-20T00:00:00Z | Rayleigh coeff.: 1. -> 0.9999                (1) |
+| 2020-05-28T00:00:00Z | Rayleigh coeff.: 0.9999 -> 1.                    |
+| 2020-05-28T00:00:00Z | dt_atm: 20s -> 15s                               |
+|                      | ozone: prognostic -> external data               |
+|                      | zmaxcloudy: 33km -> 22.5km                   (2) |
+|                      | P1D_mean 3d output: average of four 6-hourly instantaneous outputs -> average of all model time steps |
+| 2020-06-05T00:00:00Z | dt_atm: 15s -> 20s                               |
+| 2020-07-27T00:00:00Z | dt_atm: 20s -> 18s and dynamics substeps: 5 -> 6 |
+| 2020-08-04T00:00:00Z | dt_atm: 18s -> 20s and dynamics substeps: 6 -> 5 |
 
-(1) zmaxcloudy is the maximum height up to which cloud microphysics is computed
+(1) The Rayleigh coefficient controls the damping of the vertical wind above 44 km height
+(2) zmaxcloudy is the maximum height up to which cloud microphysics is computed
 
 ---
 
