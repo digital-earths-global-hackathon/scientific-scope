@@ -75,7 +75,7 @@ Generalized smooth-level vertical coordinate ([Leuenberger et al., 2010][L2010])
 
 #### Code
 
-- icon-mpim:feature-dy3ha-p-experiments at commit b9c9da5cef4e7faadf13c2fe213de0c990c94bf3 (https://gitlab.dkrz.de/icon/icon-mpim/-/tree/b9c9da5cef4e7faadf13c2fe213de0c990c94bf3)
+- [icon-mpim:feature-dy3ha-p-experiments at commit b9c9da5cef4e7faadf13c2fe213de0c990c94bf3](https://gitlab.dkrz.de/icon/icon-mpim/-/tree/b9c9da5cef4e7faadf13c2fe213de0c990c94bf3)
 
 ---
 
@@ -113,7 +113,7 @@ Due to crashes, of technical nature as it turned out later, some adjustments of 
 
 #### Standard output
 
-The standard output follows the data request (https://digital-earths-global-hackathon.github.io/hosting/technical/data_request.html) with a few deviations:
+The standard output follows the [data request](https://digital-earths-global-hackathon.github.io/hosting/technical/data_request.html) with a few deviations:
 - `mrso`, the soil liquid water content in kg/m2 is available as 3d field for 5 soil levels instead of a vertical sum over all soil levels.
 - `swe`, the liquid water content of surface snow is not available over land ice so that this field is zero in areas like Antarctica and Greenland
 
@@ -184,10 +184,26 @@ Available time periods:
 
 [H2023]: https://doi.org/10.5194/gmd-16-779-2023 'Hohenegger, C., Korn, P., Linardakis, L., Redler, R., Schnur, R., Adamidis, P., et al. (2023). ICON-Sapphire: simulating the components of the Earth system and their interactions at kilometer and subkilometer scales. Geosci. Model Dev., 16. https://doi.org/10.5194/gmd-16-779-2023'
 
-[L2010]:  https://doi.org/10.1175/2010MWR3307.1 'Leuenberger, D., Koller, M., Fuhrer, O., & Schär, C. (2010). A generalization of the SLEVE vertical coordinate. Monthly Weather Review, 138(9). https://doi.org/10.1175/2010MWR3307.1'
+[L2010]: https://doi.org/10.1175/2010MWR3307.1 'Leuenberger, D., Koller, M., Fuhrer, O., & Schär, C. (2010). A generalization of the SLEVE vertical coordinate. Monthly Weather Review, 138(9). https://doi.org/10.1175/2010MWR3307.1'
 
 [S2025]: https://doi.org/10.5194/egusphere-2025-509 'Segura, H., Pedruzo-Bagazgoitia, X., Weiss, P., Müller, S. K., Rackow, T., Lee, J., et al. (2025). nextGEMS: entering the era of kilometer-scale Earth system modeling. EGUsphere [preprint]. https://doi.org/10.5194/egusphere-2025-509'
  
 [S2019]: https://doi.org/10.1186/s40645-019-0304-z 'Stevens, B., Satoh, M., Auger, L. et al. (2019). DYAMOND: the DYnamics of the Atmospheric general circulation Modeled On Non-hydrostatic Domains. Prog Earth Planet Sci 6, 61. https://doi.org/10.1186/s40645-019-0304-z'
 
 [Z2015]: https://doi.org/10.1002/qj.2378 'Zängl, G., Reinert, D., Ripodas, P., & Baldauf, M. (2015). The ICON (ICOsahedral Non-hydrostatic) modelling framework of DWD and MPI-M: Description of the non-hydrostatic dynamical core. Quarterly Journal of the Royal Meteorological Society, 141(687). https://doi.org/10.1002/qj.2378'
+
+
+
+Cariolle, D. and Teyssèdre, H. (2007). A revised linear ozone photochemistry parameterization for use in transport and general circulation models: multi-annual simulations. Atmos. Chem. Phys., 7. <https://doi.org/10.5194/acp-7-2183-2007>
+
+Giorgetta, M. A., Brokopf, R., Crueger, T., Esch, M., Fiedler, S., Helmert, J., et al. (2018). ICON-A, the atmosphere component of the ICON Earth system model: I. Model description. Journal of Advances in Modeling Earth Systems, 10. <https://doi.org/10.1029/2017MS001242>
+
+Hohenegger, C., Korn, P., Linardakis, L., Redler, R., Schnur, R., Adamidis, P., et al. (2023). ICON-Sapphire: simulating the components of the Earth system and their interactions at kilometer and subkilometer scales. Geosci. Model Dev., 16. <https://doi.org/10.5194/gmd-16-779-2023>
+
+Leuenberger, D., Koller, M., Fuhrer, O., & Schär, C. (2010). A generalization of the SLEVE vertical coordinate. Monthly Weather Review, 138(9). <https://doi.org/10.1175/2010MWR3307.1>
+
+Segura, H., Pedruzo-Bagazgoitia, X., Weiss, P., Müller, S. K., Rackow, T., Lee, J., et al. (2025). nextGEMS: entering the era of kilometer-scale Earth system modeling. EGUsphere [preprint]. <https://doi.org/10.5194/egusphere-2025-509>
+ 
+Stevens, B., Satoh, M., Auger, L. et al. (2019). DYAMOND: the DYnamics of the Atmospheric general circulation Modeled On Non-hydrostatic Domains. Prog Earth Planet Sci 6, 61. <https://doi.org/10.1186/s40645-019-0304-z>
+
+Zängl, G., Reinert, D., Ripodas, P., & Baldauf, M. (2015). The ICON (ICOsahedral Non-hydrostatic) modelling framework of DWD and MPI-M: Description of the non-hydrostatic dynamical core. Quarterly Journal of the Royal Meteorological Society, 141(687). <https://doi.org/10.1002/qj.2378>
