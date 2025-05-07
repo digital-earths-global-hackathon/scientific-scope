@@ -226,3 +226,17 @@ The observed all-sky symmetry exists in the climatology, and has persisted despi
 * Divide surface into boxes of size (Δλ, Δφ) and randomly assign to halves to compute reflection from random "hemispheres."
 * How trivial is a result of hemispheric symmetry (at various levels, 0.1 W/m2 or 1 W/m2) in the km-scale model? Reproduce Fig 4 from [Voigt et al. 2013](https://doi.org/10.1175/JCLI-D-12-00132.1).
 * How does the asymmetry and spatial standard deviation from the km-scale model compare with the CMIP3 models plotted in Fig 6? (CMIP5/6 models could also be added to this comparison.)
+
+---
+### Land-Breeze Circulation as Precursor of Organized Convection ([hk25-LBMarConv](https://github.com/digital-earths-global-hackathon/hk25-teams/tree/main/hk25-LBMarConv))
+
+In the tropics, convection plays an important role in modulating large-scale dynamics, being an integral component of the Intertropical Convergence Zone (ITCZ) and the Madden-Julian oscillation (MJO). Convective aggregation (CA) or spontaneous conversion of isolated to aggregated patchy convection is thought to play a role in the evolution of MJO. One of the ingredients required for CA of shallow cloud fields, especially over open ocean, is the presence of mesoscale convergence zones. Land breeze forced by islands within MC that propagate over long distances over the open ocean can provide such forcing that triggers CA.
+The main focus of this initiative is to examine the ability of different km-scale models to simulate the initiation of deep convection, triggered by land-breezes and collisions between land breezes, especially in the Maritime Continent MC.
+
+**Coordination**: George Priftis
+
+#### Sketch of initial activities
+* Identify initiation of deep convection over the MC (in tandem with other science teams)
+* Split in groups of MCSs that are triggered by individual land breezes and those triggered by land breeze collisions
+* Quantify the frequency, intensity and horizontal scale of land breezes that trigger MCS initiation
+* Evaluate the performance of different models against a global cold pool database derived by Garg et. 2020 (https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2019JD031812)
