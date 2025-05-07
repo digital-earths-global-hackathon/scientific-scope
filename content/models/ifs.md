@@ -23,7 +23,11 @@ Simulation DOI: (please cite above reference for the moment)
 
 ## Data notes (online)
 
-- **We provide the main hackathon simulation "RCBMF" via s3, with variables mostly following CF naming for the [HK25 data request](https://digital-earths-global-hackathon.github.io/hosting/technical/data_request.html)** (at 2.8km spatial resolution, coupled, 14 months, with reduced cloud base mass flux). [TODO: update incorrect metadata; for variables of identical name, the units should follow what you expect from the according ICON variables].
+- **We provide the main hackathon simulation "RCBMF" via s3, with variables mostly following CF naming for the [HK25 data request](https://digital-earths-global-hackathon.github.io/hosting/technical/data_request.html)** (at 2.8km spatial resolution, coupled, 14 months, with reduced cloud base mass flux).
+- [TODO: update incorrect metadata; for variables of identical name in both models, the units should be what you expect from the according ICON variables].
+- Variables sst & siconc are masked with 9999 over land; use .where(lambda x:x!=9999) to mask out the land.
+
+  
 - Via the EERIE cloud, we provide both **"RCBMF"** and **"DEEPOFF"** online, with original IFS variable names. Use the [Parameter Database](https://codes.ecmwf.int/grib/param-db/) for more information.
 
 ## Data notes (EU local access)
