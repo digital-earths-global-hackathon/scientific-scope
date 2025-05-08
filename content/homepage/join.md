@@ -33,4 +33,8 @@ For those who don't want to build a team, or join a team, it is still possible t
 
 Experienced users might have a clear idea of what they want to accomplish during the Hackathon.  However, because not all models will be hosted on all nodes, working on your own may preclude you from applying your analysis to all of the models.  For that you would need to build a team.
 
+---
 
+#### More Details
+
+Find a more detailed description of the concept for science teams and communication in this [**README document**](https://github.com/digital-earths-global-hackathon/hk25/blob/main/content/how2hack.md).
