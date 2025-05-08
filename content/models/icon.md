@@ -147,11 +147,13 @@ The standard output follows the [data request](https://digital-earths-global-hac
 
 ---
 
-### Quickplots
+### Quickplots and Tables
 
-The so-called "quickplots" provide a preview of the model simulation fields at HEALPix zoom level 7, including for some fields differences to ERA5 and CERES.
+The so-called "quickplots" provide a preview of the model simulation fields including - for some fields - differences to ERA5 and CERES. Plots were made from HEALpix zoom level 7 data after interpolation to a 1°x1° longitude latitude grid. Tables show minimum, global mean and maximum values of 2d fields on HEALpix zoom level 7.
 
-Three collections of plots are contained in [icon_r2b10l90_d3hp003](https://swiftbrowser.dkrz.de/public/dkrz_e59fa4f2fcac49f2aec87e9b1d1ae0eb/icon_r2b10l90_d3hp003/):
+Tables and three collections of plots are contained in [icon_r2b10l90_d3hp003](https://swiftbrowser.dkrz.de/public/dkrz_e59fa4f2fcac49f2aec87e9b1d1ae0eb/icon_r2b10l90_d3hp003/):
+- Folder TABLE:
+  - table_d3hp003_z7_\<time period\>.\<html,txt\>: global min, mean and max of 2d fields
 - Folders d3hp003-ERA5_\<time period\>:
   - atm_zon.html: zonal means of 3d fields and where possible differences to ERA5
   - bot_map.html: 2d model fields and where possible differences to ERA5
