@@ -13,7 +13,7 @@ Activities are given a unique identifier (uid) following the convention ‘hk25-
 ---
 ### Joint EarthCARE analysis with ESA ([hk25-EarthCARE](https://github.com/digital-earths-global-hackathon/hk25-teams/tree/main/hk25-EarthCARE))
 
-[EarthCARE](https://earth.esa.int/eogateway/missions/earthcare) --- **Earth** *C*loud, *A*erosol and *R*adiation *E*xplorer --- — is a joint satellite mission by the European Space Agency (ESA) and the Japan Aerospace Exploration Agency (JAXA). It is the sixth mission selected under ESA’s Earth Explorer Programme and was launched on 28 May 2024. By the time of the Hackathon, it will be approaching its first full year in orbit. EarthCARE offers a unique combination of four active and passive instruments for observing clouds, aerosols, and radiation.
+[EarthCARE](https://earth.esa.int/eogateway/missions/earthcare) — **Earth** **C**loud, **A**erosol and **R**adiation **E**xplorer — is a joint satellite mission by the European Space Agency (ESA) and the Japan Aerospace Exploration Agency (JAXA). It is the sixth mission selected under ESA’s Earth Explorer Programme and was launched on 28 May 2024. By the time of the Hackathon, it will be approaching its first full year in orbit. EarthCARE offers a unique combination of four active and passive instruments for observing clouds, aerosols, and radiation.
 
 In this team we will analyze both EarthCARE data and the participating models along virtual EarthCARE swaths, with an initial focus on tropical deep convection as analyzed by EarthCARE, aircraft, ships and ground stations during the [ORCESTRA campaign](http://orcestra-campaign.org/), i.e., over the Tropical Atlantic in the time-period between 10 August and 30 September, 2024. In addition, we are interested in extending this analysis framework to other phenomena such as tropical cyclones and subtropical stratocumulus, to evaluate how these systems are represented in both models and EarthCARE data.
 
@@ -31,7 +31,7 @@ In this team we will analyze both EarthCARE data and the participating models al
 ---
 ### DestinE with the ClimateDT Consortium ([hk25-DestinE](https://github.com/digital-earths-global-hackathon/hk25-teams/tree/main/hk25-DestinE))
 
-[DestineE](https://destination-earth.eu) is an initiative of the European Commission which includes the operationalization of multi-decadal climate simulations using km-scale global models. Several multi-decadal scenario simulations have been performed with the [Climate Change Adaptation Digital Twin](https://destine.ecmwf.int/climate-change-adaptation-digital-twin-climate-dt/#What-is-the-Climate-DT) and are being integrated into the DestinE platform. Models underlying the Climate DT are ICON, IFS-NEMO, and IFS-FESOM.
+[DestinE](https://destination-earth.eu) is an initiative of the European Commission which includes the operationalization of multi-decadal climate simulations using km-scale global models. Several multi-decadal scenario simulations have been performed with the [Climate Change Adaptation Digital Twin](https://destine.ecmwf.int/climate-change-adaptation-digital-twin-climate-dt/#What-is-the-Climate-DT) and are being integrated into the DestinE platform. Models underlying the Climate DT are ICON, IFS-NEMO, and [IFS-FESOM](https://github.com/digital-earths-global-hackathon/hk25/blob/main/content/models/ifs.md).
 
 In this cross-cutting activity, we will exploit DestinE runs for new scientific insights via the [DestinE data platform (DESP)](https://platform.destine.eu). One of the goals is to expand the scope of the scientific analyses being performed by the HK25 science teams using the multi-decadal km-scale simulations of the Climate DT. The longer-term simulations may allow answering how a particular process identified by the other science teams might change under global warming. We can also address how much of a recent observed extreme event can be attributed to the already realised climate change, or how the exact event might have unfolded in an even warmer climate (using DestinE's so-called storyline simulations).
 
@@ -49,16 +49,18 @@ In this cross-cutting activity, we will exploit DestinE runs for new scientific 
 
 NVIDIA has been exploring the use of AI to improve the workflows associated with km-scale models.  For the Hackathon they have developed a prototype emulator allows massive compression of km-scale data, which then can provide a platofrm for accelerated analysis.
 
-In this cross-cutting activity we will evaluate the capabilities and limitations of the emulator, and its ability to learn differences amond km-scale models. 
+In this cross-cutting activity we will evaluate the capabilities and limitations of the emulator, and its ability to learn differences among km-scale models.
 
-**Note** Participants are asked to register for the team as early as possible so the varied skill levels can be evalauted and approrpiate activities defined. 
+**Note** Participants are asked to register for the team as early as possible so the varied skill levels can be evaluated and approrpiate activities defined.
 
 **Coordination**: Karthik Kashinath (kkashinath@nvidia.com), Noah Brenowitz (nbrenowitz@nvidia.com)
 
 #### Sketch of initial activities:
-* extend AI training to additional models hosted on NERSC mode
-* scale out the AI traning to other hackathon nodes and models
-* test inference of model trained on an earlier version of ICON and ERA5
+* 45-minute technical talk on generative diffusion model-based emulation of km-scale climate data (day 1)
+* 60-minute hands-on tutorial session on training and inferencing diffusion models (day 1)
+* AI inference of model trained on an earlier version of ICON and ERA5 to study limits of climate faithfulness
+* Extend AI training to additional models hosted on NERSC mode
+* Scale out the AI traning to other hackathon nodes and models
 
 ---
 ### Feature tracking with the grassroots ([hk25-Tracking](https://github.com/digital-earths-global-hackathon/hk25-teams/tree/main/hk25-Tracking))

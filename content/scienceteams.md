@@ -133,16 +133,17 @@ In this team we will test what the added value of high-resolution output is for 
 
 ### Tropical Cyclones ([hk25-TropCyc](https://github.com/digital-earths-global-hackathon/hk25-teams/tree/main/hk25-TropCyc))
 
-Tropical Cyclones (TCs) are intense organised convective systems that are responsible for nearly half of the worldwide disaster-related costs (CRED & UNDRR, 2020). Historically, they have been difficult to represent in coarse-resolution climate models because of their small size and their sensitivity to convective parametrisations. It has been shown that increasing resolution to 25km allows models to represent the number and distribution of cyclones correctly (Roberts et al. [2020](https://link.springer.com/article/10.1007/s00382-024-07138-w)), but the intensity remains largely underestimated, and the structure is not well represented (Bourdin et al. [2024](https://link.springer.com/article/10.1007/s00382-024-07138-w)). Baker et al. ([2024](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2024GL109841)) showed that increasing resolution up to 5km improves the intensity, the lifecycle and the structure of TCs in NextGEMS simulations.
+Tropical Cyclones (TCs) are intense organised convective systems that are responsible for nearly half of the worldwide disaster-related costs (CRED & UNDRR, 2020). Historically, they have been difficult to represent in coarse-resolution climate models because of their small size and their sensitivity to convective parametrisations. It has been shown that increasing resolution to 25km allows models to represent the number and distribution of cyclones correctly (Roberts et al. 2020), but the intensity remains largely underestimated, and the structure is not well represented (Bourdin et al. 2024). Baker et al. (2024) showed that increasing resolution up to 5km improves the realism of intensity, intensification rate, lifecycle and structure of TCs in NextGEMS simulations.
 
 In this team, we will investigate how TCs are represented in the new sets of simulations in terms of statistics, structure, lifecycle and link with the environment.
 
-**Coordination**: Stella Bourdin (stella.bourdin@physics.ox.ac.uk), Masaki Satoh (satoh@aori.u-tokyo.ac.jp)
+**Coordination**: Stella Bourdin (stella.bourdin@physics.ox.ac.uk), Alex Baker (alexander.baker@reading.ac.uk), Arthur Avenas (arthur.avenas@esa.int), Xu Chen (chenx@g.ecc.u-tokyo.ac.jp)
 
 #### Sketch of initial activities:
-  + Assess TCs statistics (e.g., intensity and intensification rates) using TempstExtremes
-  + Assess tropical cyclones structure from snapshots
-  + Assess environmental controls on TCs, e.g., moisture, potential intensity
+* Track TCs in the simulations using TempestExtremes -> Assess TCs statistics, particularly in terms of intensity and intensification rates
+* Retrieve snapshots of tropical cyclones’ structure -> Assess tropical cyclones structure
+* Retrieve/compute variables associated with environmental favourability for TC (e.g. GPI) -> Assess how the environment controls TCs, particularly the moisture field and the components of Potential Intensity
+* Comparison of TC tracks from re-analyses / models and from satellite observations
 
 ---
 
@@ -210,6 +211,97 @@ Sketch of initial activities:
 + Analyze where and how global km-scale models compared to on-purpose urban modelling initiatives at smaller spatial scales
 
 ---
+### Hemispheric Albedo Symmetry ([hk25-AlbedoSym](https://github.com/digital-earths-global-hackathon/hk25-teams/tree/main/hk25-AlbedoSym))
+
+Observations of Earth show a persistent, remarkable, and unexplained hemispheric symmetry of albedo, or reflected shortwave radiation. This has been documented for decades, but most reliably so since the creation of a long-term CERES record (see e.g. [Voigt et al. 2013](https://doi.org/10.1175/JCLI-D-12-00132.1), [Datseris and Stevens 2021](https://doi.org/10.1029/2021AV000440), [Jonsson and Bender 2022](https://doi.org/10.1175/JCLI-D-20-0970.1)). The observations show that all-sky symmetry is established through a compensation between clouds and clear-sky reflection: where the NH is about 4 W/m2 brighter from the clear-sky atmosphere, 2 W/m2 brighter from the surface, and 6 W/m2 dimmer from clouds.
+
+However, CMIP class models struggle to reproduce the observed degree of symmetry (e.g., [Rugenstein and Hakuba 2023](https://doi.org/10.1029/2022GL101802), [Jonsson and Bender 2023](https://doi.org/10.5194/esd-14-345-2023), [Crueger et al. 2023](https://doi.org/10.1175/JCLI-D-22-0923.1)). Models show biases away from symmetry in all possible configurations: (1) each hemisphere is too bright, (2) each hemisphere is too dark, (3) NH is too bright, but SH is too dark, or (4) NH is too dark, but SH is too bright. Model biases are strongly linked to cloud biases, so one may speculate that a km-scale model which resolves deep convection may better capture the observed hemispheric symmetry in reflection.
+
+The observed all-sky symmetry exists in the climatology, and has persisted despite significant dimming trends in both hemispheres, but the hemsipheres do deviate from perfect symmetry on shorter monthly timescales. Unfortunately, this makes assessment of a 12-month simulation from a km-scale model very difficult. For this project, we propose to follow the approach of [Voigt et al. 2013](https://doi.org/10.1175/JCLI-D-12-00132.1) and assess (a) the spatial decorrelation structure of the albedo, and (b) the triviality of a hemispheric albedo symmetry in the km-scale simulation.
+
+**Coordination**: Clare Singer (cesinger23@gmail.com)
+
+#### Sketch of initial activities
+* Calculate Δλ and Δφ via autocorrelation of zonal- or meridional-mean reflected SW, as described in [Voigt et al. 2013](https://doi.org/10.1175/JCLI-D-12-00132.1).
+* How does Δλ and Δφ from the km-scale model compare to that from CERES observations Δλ=36° and Δφ=10° ([Voigt et al. 2013](https://doi.org/10.1175/JCLI-D-12-00132.1))?
+* Divide surface into boxes of size (Δλ, Δφ) and randomly assign to halves to compute reflection from random "hemispheres."
+* How trivial is a result of hemispheric symmetry (at various levels, 0.1 W/m2 or 1 W/m2) in the km-scale model? Reproduce Fig 4 from [Voigt et al. 2013](https://doi.org/10.1175/JCLI-D-12-00132.1).
+* How does the asymmetry and spatial standard deviation from the km-scale model compare with the CMIP3 models plotted in Fig 6? (CMIP5/6 models could also be added to this comparison.)
+
+---
+### Land-Breeze Circulation as Precursor of Organized Convection ([hk25-LBMarConv](https://github.com/digital-earths-global-hackathon/hk25-teams/tree/main/hk25-LBMarConv))
+
+In the tropics, convection plays an important role in modulating large-scale dynamics, being an integral component of the Intertropical Convergence Zone (ITCZ) and the Madden-Julian oscillation (MJO). Convective aggregation (CA) or spontaneous conversion of isolated to aggregated patchy convection is thought to play a role in the evolution of MJO. One of the ingredients required for CA of shallow cloud fields, especially over open ocean, is the presence of mesoscale convergence zones. Land breeze forced by islands within MC that propagate over long distances over the open ocean can provide such forcing that triggers CA.
+The main focus of this initiative is to examine the ability of different km-scale models to simulate the initiation of deep convection, triggered by land-breezes and collisions between land breezes, especially in the Maritime Continent MC.
+
+**Coordination**: George Priftis
+
+#### Sketch of initial activities
+* Identify initiation of deep convection over the MC (in tandem with other science teams)
+* Split in groups of MCSs that are triggered by individual land breezes and those triggered by land breeze collisions
+* Quantify the frequency, intensity and horizontal scale of land breezes that trigger MCS initiation
+* Evaluate the performance of different models against a global cold pool database derived by Garg et. 2020 (https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2019JD031812)
+
+---
+
+### STORMS under Climate Change ([hk25-STORMCC](https://github.com/digital-earths-global-hackathon/hk25-teams/tree/main/hk25-STORMCC))
+
+Kilometer-scale climate models offer new opportunities to better understand drivers
+of near-surface winds and their effects under both present-day climate condition and
+in a warmer world. For the hackathon, our team will explore near-surface wind
+statistics from (3-)hourly output of the new climate model simulations. Obtained
+results for the present-day climatology of the winds will be compared against other
+data sets, e.g., ERA5 reanalysis. StormCC will also use the new climate model output
+to investigate the changes in the distributions of (3-)hourly near-surface winds
+with warming. A comparison will be made against output from experiments with
+coarser-resolution climate models as used in CMIP. Characteristics of near-surface
+winds for different seasons and times of day will be assessed and related to the
+classical understanding of processes in atmospheric dynamics. Such processes can be
+addressed with hourly data in near-surface winds and will be studied in regional
+domains of interest, e.g., Northern Africa for the link of winds to dust emission or
+storm track regions for changes in peak winds associated with cyclones. 
+
+**Coordination**: Sreedev Sreekumar
+
+#### Sketch of initial activities
+- Compute the surface wind climatology from kilometer-scale climate model output
+over global and regional domains.
+- Assess the global dust uplift potential based on surface wind characteristics.
+- Analyze the diurnal cycle of winds in regions of interest
+- Compare model results with other datasets such as observations, reanalysis and
+CMIP.
+
+---
+
+### Km-scale representation of aerosol transport and interaction with radiation and clouds ([hk25-Aerosols](https://github.com/digital-earths-global-hackathon/hk25-teams/tree/main/hk25-Aerosols))
+
+This science team will assess the representation of aerosol transport and interaction with radiation and clouds. The team will analyze a year-long, km-scale simulation with interactive aerosols. The aerosols are represented with four modes with prescribed sizes and compositions, i.e., dust, sea salt, carbonaceous aerosol, and sulfuric aerosol. The four modes are transported through the atmosphere and are coupled with various processes such as radiation, convection, and precipitation [(Weiss et al. 2024)](https://egusphere.copernicus.org/preprints/2024/egusphere-2024-3325/).
+
+**Coordination**: Philipp Weiss (philipp.weiss@physics.ox.ac.uk)
+
+#### Sketch of initial activities
+
+* Examine the annual cycle of dust emissions driven by moist convection
+* Examine the transport of dust, smoke, and moisture in the West-African monsoon region
+* Examine the representation of the Asian Tropopause Aerosol Layer and long-range transport of pollutants from the Indo-Gangetic Plain
+* Examine the small-scale transport of boreal fire smoke in the Arctic region
+* Examine the influence of aerosols on the organisation of mesoscale convective systems
+
+---
+### High Cloud Top Temperatures ([hk25-HighCloudT](https://github.com/digital-earths-global-hackathon/hk25-teams/tree/main/hk25-HighCloudT))
+
+Because of their altitude, convective high clouds dominate outgoing longwave radiation (OLR) by setting the emission temperature, such that $OLR \approx \sigma T_{hc}^4$, with $T_{hc}$ the high cloud top temperature. This expression, combined with the theory that high clouds worldwide have a characteristic emission temperature that remains unchanging with surface warming (the Fixed Anvil Temperature hypothesis; Hartmann et al., 2002; Thompson et al., 2017), suggests that constraining $T_{hc}$ can lead to better estimates of the longwave high cloud feedback parameter and thus climate sensitivity.
+
+In this group, we will examine high cloud top temperatures in storm resolving models. We will identify gridcells fully spanned by high clouds and invert the allsky OLR for emission temperature, then construct latitudinally-resolved temperature distributions. Using these distributions, we can test the effectiveness of simple expressions in capturing the high cloud radiative effect (e.g., Corti and Peter, 2009; Jeevanjee 2023; Deutloff et al., 2025) and, assuming they are unchanging with warming, work towards deriving the longwave cloud feedback parameter.
+
+**Coordination:** Paulina Czarnecki (pc2943@columbia.edu)
+
+#### Sketch of Initial Activities
+- Identify high cloud top temperatures (in the simplest case, by inverting $\sigma T^4 = OLR_{allsky}$ in gridcells where cloud area fraction $f = 1$ and ice content $> 10^{-1}$ kg m<sup>2</sup>)
+- Plot and analyze distributions in space and time
+- Compare between models, observations, +4K simulations.
+
+---
 
 ### Convective organization and Thermodynamic-convection coupling ([hk25-Convorg](https://github.com/digital-earths-global-hackathon/hk25-teams/tree/main/hk25-Convorg))
 
@@ -224,4 +316,3 @@ In this team, we compare the characteristics of mesoscale organized convection, 
 + Quantify precipitation characteristics such as intensity, size, and duration
 + Analyze the thermodynamic evolution associated with deep convection (e.g., buoyancy variations and their decomposition in terms of q and T)
 + Examine the reproducibility of several convection-related phenomena (e.g., tropical waves, MJO, precipitation diurnal cycle)
-
