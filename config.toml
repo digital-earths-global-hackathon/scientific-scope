@@ -9,7 +9,7 @@ defaultContentLanguage = "en"
 theme = "hugo-scroll"
 
 # The browser tab name
-title = "Global Hackathon | HK25"
+title = "km-Scale Hackathon | HK25 homepage"
 
 # In order to add version information in the page's footer set to true.
 # enableGitInfo = true
