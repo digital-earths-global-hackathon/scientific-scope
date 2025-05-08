@@ -102,3 +102,19 @@ As part of the [ARC Centre of Excellence for the Weather of the 21st Century](ht
 * Work on healpix examples to read a plot data.
 * Identify data and variables to analyze according to the topic of interest. 
 * Collaborate and discuss research plan
+
+
+---
+
+### Inter-scale energy transfers in the atmosphere ([hk25-InterScale](https://github.com/digital-earths-global-hackathon/hk25-teams/hk25-InterScale))
+
+Many atmospheric phenomena, especially in the tropics, are scale-coupled. Small-scale convection (scales much less than 100 km) tends to aggregate into meso-scales (100-500 km), and both of these smaller-scale processes feed upscale onto much larger phenomena - e.g. MCSs, Tropical Cyclones, Equatorial Waves and the MJO. The reverse is also true through downscale energy transer, and is more well convered in the literature. This team aims to explore the inter-scale energetics of the atmosphere using the [LoSSETT](https://github.com/ElliotMG/LoSSETT) tool to extract the $\mathcal{D}_\ell$ term (see LoSSETT README), and make progress toward the following with similarly interested collaborators:
+
+**Coordination**: Dan Shipley (daniel.shipley@reading.ac.uk), Elliot McKinnon-Gray (e.b.mckinnon-gray@pgr.reading.ac.uk)
+
+#### Sketch of initial activities:
+
+* Run LoSSETT on the global year-long simulations to extract a climatology of $\mathcal{D}_\ell$
+* Explore the inter-scale energetic structure of select atmospheric phenomena
+* Understand the transfer of energy near the grid-scale of these km-scale simulations
+* Examine values of the same $\mathcal{D}_\ell$ at different HEALPix levels to ensure energy conservation away from filter scale
