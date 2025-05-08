@@ -243,6 +243,7 @@ The main focus of this initiative is to examine the ability of different km-scal
 * Evaluate the performance of different models against a global cold pool database derived by Garg et. 2020 (https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2019JD031812)
 
 ---
+
 ### STORMS under Climate Change ([hk25-STORMCC](https://github.com/digital-earths-global-hackathon/hk25-teams/tree/main/hk25-STORMCC))
 
 Kilometer-scale climate models offer new opportunities to better understand drivers
@@ -271,6 +272,7 @@ over global and regional domains.
 CMIP.
 
 ---
+
 ### Km-scale representation of aerosol transport and interaction with radiation and clouds ([hk25-Aerosols](https://github.com/digital-earths-global-hackathon/hk25-teams/tree/main/hk25-Aerosols))
 
 This science team will assess the representation of aerosol transport and interaction with radiation and clouds. The team will analyze a year-long, km-scale simulation with interactive aerosols. The aerosols are represented with four modes with prescribed sizes and compositions, i.e., dust, sea salt, carbonaceous aerosol, and sulfuric aerosol. The four modes are transported through the atmosphere and are coupled with various processes such as radiation, convection, and precipitation [(Weiss et al. 2024)](https://egusphere.copernicus.org/preprints/2024/egusphere-2024-3325/).
@@ -298,3 +300,19 @@ In this group, we will examine high cloud top temperatures in storm resolving mo
 - Identify high cloud top temperatures (in the simplest case, by inverting $\sigma T^4 = OLR_{allsky}$ in gridcells where cloud area fraction $f = 1$ and ice content $> 10^{-1}$ kg m<sup>2</sup>)
 - Plot and analyze distributions in space and time
 - Compare between models, observations, +4K simulations.
+
+---
+
+### Convective organization and Thermodynamic-convection coupling ([hk25-Convorg](https://github.com/digital-earths-global-hackathon/hk25-teams/tree/main/hk25-Convorg))
+
+Convective organization is one of important features especially in the tropics over a wide range of spatio-temporal scales. Organized convection interacts with meso-to-synoptic-scale environments and is coupled to large-scale circulations, affecting both weather and climate across the globe. Although global km-scale climate models can represent convective processes more explicitly than conventional climate models, they are expected to struggle with the realistic simulation of convective organization and associated thermodynamic-convection coupling because of unresolved or underresolved processes even with km-scale grid spacing (e.g., microphysics and turbulent mixing).
+
+In this team, we compare the characteristics of mesoscale organized convection, thermodynamic evolution in the life cycle of deep convection, and related weather/climate phenomena simulated in many global storm-resolving models, which have different physics configurations. We also aim at providing helpful insights about the km-scale model development.
+
+**Coordination**: Daisuke Takasuka (takasuka@tohoku.ac.jp)
+
+#### Sketch of initial activities:
+
++ Quantify precipitation characteristics such as intensity, size, and duration
++ Analyze the thermodynamic evolution associated with deep convection (e.g., buoyancy variations and their decomposition in terms of q and T)
++ Examine the reproducibility of several convection-related phenomena (e.g., tropical waves, MJO, precipitation diurnal cycle)
