@@ -23,10 +23,9 @@ Simulation DOI: (please cite above reference for the moment)
 
 ## Data notes (online)
 
-- **We provide the main hackathon simulation "RCBMF" via s3, with variables mostly following CF naming for the [HK25 data request](https://digital-earths-global-hackathon.github.io/hosting/technical/data_request.html)** (at 2.8km spatial resolution, coupled, 14 months, with reduced cloud base mass flux).
+- **We provide the main hackathon simulation "RCBMF" via the s3 [DKRZ Object Store](https://github.com/digital-earths-global-hackathon/hk25/blob/main/content/simulations.md), with variables mostly following CF naming for the [HK25 data request](https://digital-earths-global-hackathon.github.io/hosting/technical/data_request.html)** (at 2.8km spatial resolution, coupled, 14 months, with reduced cloud base mass flux).
 - [TODO: update incorrect metadata; for variables of identical name in both models, the units should be what you expect from the according ICON variables].
 - Variables sst & siconc are masked with 9999 over land; use .where(lambda x:x!=9999) to mask out the land.
-
   
 - Via the EERIE cloud, we provide both **"RCBMF"** and **"DEEPOFF"** online, with original IFS variable names. Use the [Parameter Database](https://codes.ecmwf.int/grib/param-db/) for more information.
 
@@ -36,3 +35,6 @@ Simulation DOI: (please cite above reference for the moment)
 - (temporarily: access to "RCBMF", "DEEPOFF", and multi-decadal nextGEMS simulations at 9km resolution possible via
 cat = intake.open_catalog("https://data.nextgems-h2020.eu/catalog.yaml"). See also the [easy.gems documentation](https://easy.gems.dkrz.de/DYAMOND/NextGEMS/prefinal.html))
 - access to DestinE multi-decadal simulations possible via [DESP (more information here)](https://github.com/digital-earths-global-hackathon/hk25-teams/blob/main/hk25-DestinE/intro/introduction.md), requires registration
+
+## Basic plotting
+You can start from the [simple plotting script](https://github.com/digital-earths-global-hackathon/hk25-teams/blob/main/hk25-tutorials/simple_plot.ipynb). If there are any issues when applying this on IFS data (tested that it works!), contact [Thomas Rackow](mailto:thomas.rackow@ecmwf.int) via mail or on Mattermost.
