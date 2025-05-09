@@ -26,7 +26,7 @@ Zoom calls can be arranged via Mattermost.
 
     - See this [github issues quickstart](https://docs.github.com/en/issues/tracking-your-work-with-issues/configuring-issues/quickstart) tutorial for working with issues on Github. Mostly you will just want to filter issues by label for the science team (e.g. `hk25-MCS`), and you can add comments, figures.
 
-    - Make sure your issue has a label corresponding to the science team (e.g. hk25-MCS). See (managing github labels)[https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels] for more information.
+    - Make sure your issue has a label corresponding to the science team (e.g. hk25-MCS). See [managing github labels](https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels) for more information.
 
 - To share code or scripts, you can push them up to the github repository for each team. Contact the team lead or a local contact who knows about github if you are not experienced doing this. Downloading scripts from github is a simple click.
 
