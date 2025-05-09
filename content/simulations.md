@@ -13,7 +13,7 @@ Further information about the **data request** are given [**here**](https://digi
 |  <ins> **[CAS-ESM](https://github.com/digital-earths-global-hackathon/hk25/blob/main/content/models/cas.md)** </ins>        |  |  |  |
 | Global 10 km (partly 5 km)       | [Beijing](https://earthlab.iap.ac.cn/en/hackathon2025/)                                  | *tba*                       | *tbd*            |
 | <ins> **[ARP-GEM](https://github.com/digital-earths-global-hackathon/hk25/blob/main/content/models/arpgem.md)**  </ins>          |  |  |  |
-| Global 2.6 km & 1.6 km           | [Hamburg](https://digital-earths-global-hackathon.github.io/hamburg-node/) | *tba* | [Olivier Geoffrey](mailto:olivier.geoffroy@meteo.fr)      |
+| Global 2.6 km & 1.3 km           | [Hamburg](https://digital-earths-global-hackathon.github.io/hamburg-node/) | *tba* | [Olivier Geoffroy](mailto:olivier.geoffroy@meteo.fr)      |
 | <ins> **[IFS-FESOM](https://github.com/digital-earths-global-hackathon/hk25/blob/main/content/models/ifs.md)** </ins>       |  |  |  |
 | Global atm 2.8 km / ocean 5 km   | [Hamburg](https://digital-earths-global-hackathon.github.io/hamburg-node/)               | [catalogue](https://digital-earths-global-hackathon.github.io/catalog/)                      | [Thomas Rackow](mailto:thomas.rackow@ecmwf.int)       |
 |  <ins> **[ICON](https://github.com/digital-earths-global-hackathon/hk25/blob/main/content/models/icon.md)** </ins>          |  |  |  |
