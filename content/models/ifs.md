@@ -37,4 +37,7 @@ cat = intake.open_catalog("https://data.nextgems-h2020.eu/catalog.yaml"). See al
 - access to DestinE multi-decadal simulations possible via [DESP (more information here)](https://github.com/digital-earths-global-hackathon/hk25-teams/blob/main/hk25-DestinE/intro/introduction.md), requires registration
 
 ## Basic plotting
+
+First, make sure to install the Hackathon environment as detailed [here](https://github.com/digital-earths-global-hackathon/hamburg-node/blob/main/content/howtotech.md).
+
 You can start from the [simple plotting script](https://github.com/digital-earths-global-hackathon/hk25-teams/blob/main/hk25-tutorials/simple_plot.ipynb). If there are any issues when applying this on IFS data (tested that it works!), contact [Thomas Rackow](mailto:thomas.rackow@ecmwf.int) via mail or on Mattermost.
