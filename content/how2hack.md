@@ -41,7 +41,7 @@ If you do not see a science team of interest:
 
 - We encourage you to see if there is a team which is already related and join it
 
-- If not, create your own! See the instructions (README) in the (hackathon science teams repository)[https://github.com/digital-earths-global-hackathon/hk25-teams]. It would help to have some knowledge of github, or team up with someone who does.
+- If not, create your own! See the instructions (README) in the [hackathon science teams repository](https://github.com/digital-earths-global-hackathon/hk25-teams). It would help to have some knowledge of github, or team up with someone who does.
 
 ## Mattermost
 
