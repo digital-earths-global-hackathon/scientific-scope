@@ -4,6 +4,8 @@ The data are available in the [**data catalog**](https://digital-earths-global-h
 
 This page gives the basic overview of the model simulations and available data. Details on the models are stored [here](https://github.com/digital-earths-global-hackathon/hk25/tree/main/content/models).
 
+Further information about the **data request** are given [**here**](https://digital-earths-global-hackathon.github.io/hosting/technical/data_request.html#variables).
+
 <ins> **Model** </ins>
 
 | Domain and resolution                                                 | Host team          | Link to data                     | Data contact           |
