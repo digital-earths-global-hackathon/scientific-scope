@@ -21,7 +21,7 @@ Further information about the **data request** are given [**here**](https://digi
 |  <ins> **[CAS-ESM](https://github.com/digital-earths-global-hackathon/hk25/blob/main/content/models/cas.md)** </ins>        |  |  |  |
 | Global 10 km (partly 5 km)       | [Beijing](https://earthlab.iap.ac.cn/en/hackathon2025/)                                  | *tba*                       | *tbd*            |
 | <ins> **[IFS-FESOM](https://github.com/digital-earths-global-hackathon/hk25/blob/main/content/models/ifs.md)** </ins>       |  |  |  |
-| Global atm 2.8 km / ocean 5 km   | [Hamburg](https://digital-earths-global-hackathon.github.io/hamburg-node/)               | *tba*                       | [Thomas Rackow](mailto:thomas.rackow@ecmwf.int)       |
+| Global atm 2.8 km / ocean 5 km   | [Hamburg](https://digital-earths-global-hackathon.github.io/hamburg-node/)               | [DKRZ Object Store](https://github.com/digital-earths-global-hackathon/tools/blob/main/dataset_transfer/DKRZ_s3_rclone.md): dkrz:wrcp-hackathon/data/IFS-FESOM/ | [Thomas Rackow](mailto:thomas.rackow@ecmwf.int), [Nils Dreier](mailto:dreier@dkrz.de)       |
 | <ins> **[NCAR-MPAS](https://github.com/digital-earths-global-hackathon/hk25/blob/main/content/models/mpas.md)** </ins>      |  |  |  |
 | Global                           | [US-Central](https://www.cisl.ucar.edu/events/digital-earths-global-hackathon)           | *tba*                       | [Brain Medeiros](mailto:brianpm@ucar.edu )            |
 | <ins>   **[NCAR-WRF](https://github.com/digital-earths-global-hackathon/hk25/blob/main/content/models/wrf.md)**  </ins>       |  |  |  |
