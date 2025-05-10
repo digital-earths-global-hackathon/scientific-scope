@@ -115,8 +115,8 @@ Due to crashes, of technical nature as it turned out later, some adjustments of 
 #### Standard output
 
 The standard output follows the [data request](https://digital-earths-global-hackathon.github.io/hosting/technical/data_request.html) with a few deviations:
-- `mrso`, the soil liquid water content in kg/m2 is available as 3d field for 5 soil levels instead of a vertical sum over all soil levels.
-- `swe`, the liquid water content of surface snow is not available over land ice so that this field is zero in areas like Antarctica and Greenland
+- `mrso`, the soil liquid water content is available as 3d field for 5 soil levels, in units of m = 1000 kg/m2, instead of a vertical sum over all soil levels in kg/m2.
+- `swe`, the liquid water content of surface snow is in units of m = 1000 kg/m2, and is not defined over land ice in the ICON land model, so that this field is zero in areas like Antarctica and Greenland.
 
 ### Additional output
 
